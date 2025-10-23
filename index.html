@@ -6,26 +6,32 @@
     <link href="./output.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
+    <header
+      class="flex flex-col gap-7 p-4 absolute top-0 left-0 right-0 text-white"
+    >
       <div class="flex justify-between items-center">
         <div class="">
-          <img src="assets/images/a491a7c2-8e83-4ee2-af94-cbcc8016d58d.svg" alt="" class="w-[80%]" />
+          <img
+            src="assets/images/a491a7c2-8e83-4ee2-af94-cbcc8016d58d.svg"
+            alt=""
+            class="w-[80%]"
+          />
         </div>
         <div class=" ">
-            <ul class="flex items-center gap-5">
-                <li><a href="" class="hover:underline">News</a></li>
-                <li><a href="" class="hover:underline">Jobs</a></li>
-                <li><a href="" class="hover:underline">Donate</a></li>
-                <li><a href="" class="hover:underline">A-Z</a></li>
-                <li><a href="" class="hover:underline">Alumni</a></li>
-                <li><a href="" class="hover:underline">Staff</a></li>
-                <li><a href="">Students</a></li>
-            </ul>
+          <ul class="flex items-center gap-5">
+            <li><a href="" class="hover:underline">News</a></li>
+            <li><a href="" class="hover:underline">Jobs</a></li>
+            <li><a href="" class="hover:underline">Donate</a></li>
+            <li><a href="" class="hover:underline">A-Z</a></li>
+            <li><a href="" class="hover:underline">Alumni</a></li>
+            <li><a href="" class="hover:underline">Staff</a></li>
+            <li><a href="">Students</a></li>
+          </ul>
         </div>
       </div>
       <div class="flex justify-between items-center">
         <nav>
-          <ul>
+          <ul class="flex items-center gap-5">
             <li><a href="">Study </a></li>
             <li><a href="">Student life</a></li>
             <li><a href="">Research and innovation</a></li>
@@ -34,10 +40,51 @@
             <li><a href="">Jobs</a></li>
           </ul>
         </nav>
-        <div>
-            <button>Search the site</button>
+        <div class="flex items-center gap-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 115.196 5.196a7.5 7.5 0 0110.607 10.607z"
+            />
+          </svg>
+          <p>Search the site</p>
         </div>
       </div>
     </header>
+    <!-- Hero sectio n with  background image    -->
+    <section
+      class="h-screen bg-[url('assets/images/70c7ef78-a562-4ab7-ab6e-36eb40f5d41f.webp')] bg-cover flex bg-amber-400 items-center px-5"
+    >
+      <div>
+        <div>
+          <h1
+            class="text-5xl uppercase text-white font-bold p-2 border-2 w-fit"
+          >
+            Make 2026 your year
+          </h1>
+          <p class="text-white text-2xl w-fit border-2">
+            We offer a range of master’s courses in business and management,<br />
+            allied health, computer science and engineering all available to
+            start <br />
+            in January 2026.
+          </p>
+          <p  class="hover:underline text-white text-xl  border-2 p-2 mt-5 w-fit" >
+            <a
+              href=""
+             
+              >Discover our January courses
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
