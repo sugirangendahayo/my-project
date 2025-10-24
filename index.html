@@ -4,7 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
   </head>
+  <style>
+    body {
+      font-family: "Quicksand", sans-serif;
+    }
+  </style>
   <body>
     <header
       class="flex flex-col gap-7 p-4 absolute top-0 left-0 right-0 text-white"
@@ -70,19 +81,57 @@
           >
             Make 2026 your year
           </h1>
-          <p class="text-white text-2xl w-fit border-2">
+          <p class="text-white text-2xl w-fit border-2 p-2">
             We offer a range of master’s courses in business and management,<br />
             allied health, computer science and engineering all available to
             start <br />
             in January 2026.
           </p>
-          <p  class="hover:underline text-white text-xl  border-2 p-2 mt-5 w-fit" >
-            <a
-              href=""
-             
-              >Discover our January courses
-            </a>
+          <p class="hover:underline text-white text-xl border-2 p-2 mt-5 w-fit">
+            <a href="">Discover our January courses </a>
           </p>
+        </div>
+      </div>
+    </section>
+    <section class="h-screen">
+      <div class="bg-blue-950 py-6 px-10 text-white">
+        <div class="flex items-center gap-5 justify-around">
+          <div class="flex-none">
+            <span class="text-[1.3rem] font-bold">Find your course</span>
+          </div>
+          <div class="grow">
+            <input
+              type="text"
+              class="w-full p-4 bg-white text-black outline-none"
+            />
+          </div>
+          <div class="flex-none p-4 border">
+            <span><a href="" class="hover:underline">Search</a></span>
+          </div>
+          <div class="flex-none flex flex-col">
+            <span><a href="" class="underline">Courses by A-Z</a></span>
+            <span><a href="" class="underline">Courses by subject</a></span>
+          </div>
+        </div>
+        <div class="flex items-center gap-5 justify-center pt-5">
+          <div>
+            <span class="flex items-center gap-2">
+              <input type="radio" />
+              <span class="text-[1.2rem]">Undergraduate</span>
+            </span>
+          </div>
+          <div>
+            <span class="flex items-center gap-2">
+              <input type="radio" />
+              <span class="text-[1.2rem]">Postgraduate taught</span>
+            </span>
+          </div>
+          <div>
+            <span class="flex items-center gap-2">
+              <input type="radio" />
+              <span class="text-[1.2rem]">Postgraduate research</span>
+            </span>
+          </div>
         </div>
       </div>
     </section>
