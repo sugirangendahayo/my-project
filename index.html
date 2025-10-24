@@ -39,7 +39,7 @@
             <li><a href="" class="hover:underline">Staff</a></li>
             <li><a href="">Students</a></li>
           </ul>
-          <div class="flex gap-5">
+          <div class="flex gap-5  md:hidden">
             <div class="cursor-pointer">
               <svg
                 class="w-6 h-6"
@@ -689,38 +689,37 @@
         </div>
       </div>
     </section>
-    <!-- News and events section -->
-    <section class="bg-gray-100 p-8">
-      <h2 class="text-4xl font-bold mb-6 text-black inline-block p-2">
-        Latest news
-      </h2>
+   <!-- News and events section -->
+<section class="bg-gray-100 p-8">
+  <h2 class="text-4xl font-bold mb-6 text-black inline-block p-2">
+    Latest news
+  </h2>
 
-   <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:auto-rows-fr">
-  
-  <div class="bg-white pt-10 pb-24 px-5 flex flex-col md:flex-row gap-4">
-    <img
-      src="assets/images/Group-photo1.jpeg"
-      alt="award-1"
-      class="w-full md:w-1/2 object-cover"
-    />
-    <div class="flex flex-col gap-3">
-      <span>03 NOVEMBER 2025</span>
-      <p class="text-blue-950 font-semibold text-lg">
-        <a href="" class="underline">
-          Heseltine institute Annual Lecture celebrates significance of
-          football for Liverpool and its future
-        </a>
-      </p>
-      <p>
-        The deep ties between football and the city of Liverpool were in the
-        spotlight Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-        Ipsam, Victoria gallery & museum
-      </p>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+   
+    <div class="bg-white pt-10 pb-24 px-5 flex flex-col md:flex-row gap-4 md:row-span-3">
+      <img
+        src="assets/images/Group-photo1.jpeg"
+        alt="award-1"
+        class="w-full md:w-1/2 object-cover"
+      />
+      <div class="flex flex-col gap-3">
+        <span>03 NOVEMBER 2025</span>
+        <p class="text-blue-950 font-semibold text-lg">
+          <a href="" class="underline">
+            Heseltine institute Annual Lecture celebrates significance of
+            football for Liverpool and its future
+          </a>
+        </p>
+        <p>
+          The deep ties between football and the city of Liverpool were in the
+          spotlight Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Ipsam, Victoria gallery & museum
+        </p>
+      </div>
     </div>
-  </div>
 
- 
-  <div class="flex flex-col gap-5">
+    
     <div class="bg-white p-4 md:px-5 md:py-10 rounded flex flex-col gap-4">
       <span>09 OCTOBER 2025</span>
       <p class="text-blue-950 font-bold text-[1rem]">
@@ -750,75 +749,73 @@
         </a>
       </p>
     </div>
-  </div>
 
- 
-  <div class="col-span-1 md:col-span-2 mt-4">
-    <a
-      href=""
-      class="border p-3 inline-block hover:underline w-full text-center"
-    >
-      Read more news
-    </a>
-  </div>
-</div>
-
-
-      <h2 class="text-4xl font-bold mb-6 text-black inline-block p-2">
-        Latest events
-      </h2>
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:auto-rows-fr">
- 
-  <div class="bg-white py-10 px-5 flex flex-col md:flex-row gap-4 md:row-span-2">
-    <img
-      src="assets/images/c4b282ad-d3fd-4508-9786-fa64cb830f68.webp"
-      alt="award-1"
-      class="w-full md:w-1/2 object-cover"
-    />
-    <div class="flex flex-col gap-3">
-      <span class="bg-gray-200 p-1 w-fit">LECTURE</span>
-      <span>03 NOVEMBER 2025</span>
-      <p class="text-blue-950 font-bold text-lg">
-        <a href="" class="underline">
-          Should we let scientists follow their noses? How
-          curiosity-driven research advances medicine and health
-        </a>
-      </p>
+    <div class="col-span-1 md:col-span-2 mt-4">
+      <a
+        href=""
+        class="border p-3 inline-block hover:underline w-full md:w-auto text-center"
+      >
+        Read more news
+      </a>
     </div>
   </div>
 
-  <div class="bg-white px-5 py-10 rounded flex flex-col gap-4 md:col-start-2 md:row-start-1">
-    <span class="bg-gray-200 p-1 w-fit">LECTURE</span>
-    <span>13 NOVEMBER 2025</span>
-    <p class="text-blue-950 font-bold">
-      <a href="" class="underline">
-        2025 Seamus Heany Lecture - Sir Simon Schama
+  <h2 class="text-4xl font-bold mb-6 text-black inline-block p-2 mt-8">
+    Latest events
+  </h2>
+  
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+    
+    <div class="bg-white py-10 px-5 flex flex-col md:flex-row gap-4 md:row-span-2">
+      <img
+        src="assets/images/c4b282ad-d3fd-4508-9786-fa64cb830f68.webp"
+        alt="award-1"
+        class="w-full md:w-1/2 object-cover"
+      />
+      <div class="flex flex-col gap-3">
+        <span class="bg-gray-200 p-1 w-fit">LECTURE</span>
+        <span>03 NOVEMBER 2025</span>
+        <p class="text-blue-950 font-bold text-lg">
+          <a href="" class="underline">
+            Should we let scientists follow their noses? How
+            curiosity-driven research advances medicine and health
+          </a>
+        </p>
+      </div>
+    </div>
+
+    
+    <div class="bg-white px-5 py-10 rounded flex flex-col gap-4">
+      <span class="bg-gray-200 p-1 w-fit">LECTURE</span>
+      <span>13 NOVEMBER 2025</span>
+      <p class="text-blue-950 font-bold">
+        <a href="" class="underline">
+          2025 Seamus Heany Lecture - Sir Simon Schama
+        </a>
+      </p>
+    </div>
+
+    <div class="bg-white px-5 py-10 rounded flex flex-col gap-4">
+      <span class="bg-gray-200 p-1 w-fit">LECTURE</span>
+      <span>13 NOVEMBER 2025</span>
+      <p class="text-blue-950 font-bold">
+        <a href="" class="underline">
+          John Hamilton Lifelong Learning Lecture with Dr Shabna Begum
+        </a>
+      </p>
+    </div>
+
+   
+    <div class="col-span-1 md:col-span-2 mt-4">
+      <a
+        href=""
+        class="border p-3 inline-block hover:underline w-full md:w-auto text-center "
+      >
+        See more events
       </a>
-    </p>
+    </div>
   </div>
-
-  <div class="bg-white px-5 py-10 rounded flex flex-col gap-4 md:col-start-2 md:row-start-2">
-    <span class="bg-gray-200 p-1 w-fit">LECTURE</span>
-    <span>13 NOVEMBER 2025</span>
-    <p class="text-blue-950 font-bold">
-      <a href="" class="underline">
-        John Hamilton Lifelong Learning Lecture with Dr Shabna Begum
-      </a>
-    </p>
-  </div>
-
- 
-  <div class="col-span-1 md:col-span-2 mt-4">
-    <a
-      href=""
-      class="border p-3 inline-block hover:underline w-full md:w-auto text-center"
-    >
-      See more events
-    </a>
-  </div>
-</div>
-
-    </section>
+</section>
     <footer class="bg-[#1E242A] text-white px-8 py-10">
   <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-10 border-b border-gray-700 pb-10">
     
@@ -831,12 +828,12 @@
     <div>
       <h3 class="font-semibold mb-3">Information for</h3>
       <ul class="flex flex-col gap-2 text-gray-300">
-        <li><a href="#" class="hover:underline">Current students</a></li>
-        <li><a href="#" class="hover:underline">Current staff</a></li>
-        <li><a href="#" class="hover:underline">Prospective students</a></li>
-        <li><a href="#" class="hover:underline">Businesses and partners</a></li>
-        <li><a href="#" class="hover:underline">Researchers</a></li>
-        <li><a href="#" class="hover:underline">Media</a></li>
+        <li><a href="#" class="underline">Current students</a></li>
+        <li><a href="#" class="underline">Current staff</a></li>
+        <li><a href="#" class="underline">Prospective students</a></li>
+        <li><a href="#" class="underline">Businesses and partners</a></li>
+        <li><a href="#" class="underline">Researchers</a></li>
+        <li><a href="#" class="underline">Media</a></li>
       </ul>
     </div>
 
@@ -844,13 +841,13 @@
     <div>
       <h3 class="font-semibold mb-3">Study at Liverpool</h3>
       <ul class="flex flex-col gap-2 text-gray-300">
-        <li><a href="#" class="hover:underline">Undergraduate</a></li>
-        <li><a href="#" class="hover:underline">Postgraduate taught</a></li>
-        <li><a href="#" class="hover:underline">Postgraduate research</a></li>
-        <li><a href="#" class="hover:underline">Online courses</a></li>
-        <li><a href="#" class="hover:underline">CPD</a></li>
-        <li><a href="#" class="hover:underline">Continuing education</a></li>
-        <li><a href="#" class="hover:underline">International students</a></li>
+        <li><a href="#" class="underline">Undergraduate</a></li>
+        <li><a href="#" class="underline">Postgraduate taught</a></li>
+        <li><a href="#" class="underline">Postgraduate research</a></li>
+        <li><a href="#" class="underline">Online courses</a></li>
+        <li><a href="#" class="underline">CPD</a></li>
+        <li><a href="#" class="underline">Continuing education</a></li>
+        <li><a href="#" class="underline">International students</a></li>
       </ul>
     </div>
 
@@ -858,13 +855,13 @@
     <div>
       <h3 class="font-semibold mb-3">Quick links</h3>
       <ul class="flex flex-col gap-2 text-gray-300">
-        <li><a href="#" class="hover:underline">Jobs at Liverpool</a></li>
-        <li><a href="#" class="hover:underline">Library</a></li>
-        <li><a href="#" class="hover:underline">Sport at Liverpool</a></li>
-        <li><a href="#" class="hover:underline">Find a researcher</a></li>
-        <li><a href="#" class="hover:underline">Alumni</a></li>
-        <li><a href="#" class="hover:underline">Our departments and faculties</a></li>
-        <li><a href="#" class="hover:underline">All subjects</a></li>
+        <li><a href="#" class="underline">Jobs at Liverpool</a></li>
+        <li><a href="#" class="underline">Library</a></li>
+        <li><a href="#" class="underline">Sport at Liverpool</a></li>
+        <li><a href="#" class="underline">Find a researcher</a></li>
+        <li><a href="#" class="underline">Alumni</a></li>
+        <li><a href="#" class="underline">Our departments and faculties</a></li>
+        <li><a href="#" class="underline">All subjects</a></li>
       </ul>
     </div>
 
@@ -880,9 +877,9 @@
       </p>
       <p class="mt-3 text-sm text-gray-300">+44 (0) 151 794 2000</p>
       <ul class="flex flex-col gap-2 text-gray-300 mt-3">
-        <li><a href="#" class="hover:underline">Contact us</a></li>
-        <li><a href="#" class="hover:underline">Maps and directions</a></li>
-        <li><a href="#" class="hover:underline">Visit us</a></li>
+        <li><a href="#" class="underline">Contact us</a></li>
+        <li><a href="#" class="underline">Maps and directions</a></li>
+        <li><a href="#" class="underline">Visit us</a></li>
       </ul>
     </div>
   </div>
@@ -934,13 +931,13 @@
   
   <div class="max-w-7xl mx-auto flex flex-wrap justify-center md:justify-between items-center text-gray-400 text-sm mt-4 gap-2">
     <div class="flex flex-wrap gap-3 justify-center">
-      <a href="#" class="hover:underline">Accessibility</a>
-      <a href="#" class="hover:underline">Freedom of information</a>
-      <a href="#" class="hover:underline">Cookie information</a>
-      <a href="#" class="hover:underline">Data Protection</a>
-      <a href="#" class="hover:underline">Modern slavery statement</a>
-      <a href="#" class="hover:underline">Terms and Conditions</a>
-      <a href="#" class="hover:underline">Charitable status</a>
+      <a href="#" class="underline">Accessibility</a>
+      <a href="#" class="underline">Freedom of information</a>
+      <a href="#" class="underline">Cookie information</a>
+      <a href="#" class="underline">Data Protection</a>
+      <a href="#" class="underline">Modern slavery statement</a>
+      <a href="#" class="underline">Terms and Conditions</a>
+      <a href="#" class="underline">Charitable status</a>
     </div>
     <p>© University of Liverpool</p>
   </div>
