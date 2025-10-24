@@ -25,10 +25,10 @@
           <img
             src="assets/images/a491a7c2-8e83-4ee2-af94-cbcc8016d58d.svg"
             alt="Logo"
-            class="w-[80%] invert"
+            class="w-[50%] md:w-[80%] invert"
           />
         </div>
-        <div class=" ">
+        <div class="hidden md:block">
           <ul class="flex items-center gap-5">
             <li><a href="" class="hover:underline">News</a></li>
             <li><a href="" class="hover:underline">Jobs</a></li>
@@ -40,7 +40,7 @@
           </ul>
         </div>
       </div>
-      <div class="flex justify-between items-center">
+      <div class="hidden md:flex justify-between items-center">
         <nav>
           <ul class="flex items-center gap-5">
             <li><a href="">Study </a></li>
@@ -72,16 +72,16 @@
     </header>
     <!-- Hero sectio n with  background image    -->
     <section
-      class="h-screen bg-[url('assets/images/70c7ef78-a562-4ab7-ab6e-36eb40f5d41f.webp')] bg-cover flex bg-amber-400 items-center px-5"
+      class="h-screen bg-[url('assets/images/206ed12d-e8e4-4de8-8c3c-9781888729f1.webp')] md:bg-[url('assets/images/70c7ef78-a562-4ab7-ab6e-36eb40f5d41f.webp')] bg-cover flex items-center px-5"
     >
-      <div>
+      <div class="relative top-[20%]">
         <div>
           <h1
-            class="text-5xl uppercase text-white font-bold p-2 border-2 w-fit"
+            class="text-3xl md:text-5xl uppercase text-white font-bold p-2 border-2 w-fit"
           >
             Make 2026 your year
           </h1>
-          <p class="text-white text-2xl w-fit border-2 p-2">
+          <p class="text-white text-xl md:text-2xl w-fit border-2 p-2">
             We offer a range of master’s courses in business and management,<br />
             allied health, computer science and engineering all available to
             start <br />
@@ -93,27 +93,34 @@
         </div>
       </div>
     </section>
-    <section class="h-screen">
+    <section class="">
       <div class="bg-blue-950 py-6 px-10 text-white">
-        <div class="flex items-center gap-5 justify-around">
+        <div class="md:flex items-center gap-5 justify-around">
           <div class="flex-none">
             <span class="text-[1.3rem] font-bold">Find your course</span>
           </div>
           <div class="grow">
-            <input
-              type="text"
-              class="w-full p-4 bg-white text-black outline-none"
-            />
+            <div class="flex">
+              <input
+                type="text"
+                class="w-full p-4 bg-white text-black outline-none inline-block"
+              />
+              <div class="md:hidden flex-none p-4 border">
+                <a href="">></a>
+              </div>
+            </div>
           </div>
-          <div class="flex-none p-4 border">
+          <div class="hidden md:block flex-none p-4 border">
             <span><a href="" class="hover:underline">Search</a></span>
           </div>
-          <div class="flex-none flex flex-col">
+          <div class="flex-none md:flex flex-col hidden">
             <span><a href="" class="underline">Courses by A-Z</a></span>
             <span><a href="" class="underline">Courses by subject</a></span>
           </div>
         </div>
-        <div class="flex items-center gap-5 justify-center pt-5">
+        <div
+          class="flex flex-col md:flex-row md:items-center gap-5 justify-center pt-5"
+        >
           <div>
             <span class="flex items-center gap-2">
               <input type="radio" />
@@ -134,12 +141,12 @@
           </div>
         </div>
       </div>
-      <div class="flex items-center gap-5 justify-center py-10 px-5">
+      <div class="md:flex items-center gap-5 justify-center py-10 px-5">
         <div>
           <h1 class="text-3xl font-bold p-5">
             Discover the University of Liverpool
           </h1>
-          <div>
+          <div class="hidden md:block">
             <img
               src="assets/images/contact-us-VGM.jpeg"
               alt="contact-us-VGM"
@@ -163,24 +170,26 @@
               doing with our famous home city.
             </p>
           </div>
-          <div class="flex gap-5">
-            <span
-              ><a href="" class="hover:underline p-4 border"
-                >Learn about us</a
-              ></span
+          <div class="flex flex-col md:flex-row gap-5 w-full">
+            <a
+              href=""
+              class="hover:underline p-4 border w-full md:w-auto text-center md:text-left"
             >
-            <span
-              ><a href="" class="hover:underline p-4 border"
-                >Liverpool: Our city, our inspiration</a
-              ></span
+              Learn about us
+            </a>
+            <a
+              href=""
+              class="hover:underline p-4 border w-full md:w-auto text-center md:text-left"
             >
+              Liverpool: Our city, our inspiration
+            </a>
           </div>
         </div>
       </div>
     </section>
     <!-- Study with us section -->
     <section class="py-10 px-5 relative overflow-hidden">
-      <div class="flex gap-0 justify-center">
+      <div class="flex flex-col-reverse md:flex-row gap-0 justify-center">
         <!-- Text div -->
         <div class="flex-3 relative z-10 bg-blue-950 text-white py-20 px-10">
           <h1 class="text-4xl font-bold mb-4">Study with us</h1>
@@ -191,18 +200,13 @@
             everything you need to know about studying with us.
           </p>
           <div class="flex flex-wrap gap-3">
-            <a href="" class="hover:underline border p-4">Undergraduate</a>
-            <a href="" class="hover:underline border p-4">Master's</a>
-            <a href="" class="hover:underline border p-4"
-              >Postgraduate research</a
-            >
-            <a href="" class="hover:underline border p-4"
-              >Continuing professional development</a
-            >
-            <a href="" class="hover:underline border p-4"
-              >International students</a
-            >
-          </div>
+  <a href="" class="hover:underline border p-4 w-full sm:w-auto">Undergraduate</a>
+  <a href="" class="hover:underline border p-4 w-full sm:w-auto">Master's</a>
+  <a href="" class="hover:underline border p-4 w-full sm:w-auto">Postgraduate research</a>
+  <a href="" class="hover:underline border p-4 w-full sm:w-auto">Continuing professional development</a>
+  <a href="" class="hover:underline border p-4 w-full sm:w-auto">International students</a>
+</div>
+
         </div>
 
         <div class="flex-2">
@@ -484,56 +488,73 @@
       </h2>
 
       <div class="grid grid-cols-2 gap-5 auto-rows-fr">
-  <!-- LEFT BIG ITEM -->
-  <div class="bg-white pt-10 pb-24 px-5 flex gap-4 row-span-3 col-start-1">
-    <img src="assets/images/Group-photo1.jpeg" alt="award-1" class="w-1/2 object-cover" />
-    <div class="flex flex-col gap-3">
-      <span>03 NOVEMBER 2025</span>
-      <p class="text-blue-950 font-semibold text-lg">
-        <a href="" class="underline">
-          Heseltine institute Annual Lecture celebrates significance of football for Liverpool and its future
-        </a>
-      </p>
-      <p>
-        The deep ties between football and the city of Liverpool were in the spotlight Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, Victoria gallery & museum
-      </p>
-    </div>
-  </div>
+        <!-- LEFT BIG ITEM -->
+        <div
+          class="bg-white pt-10 pb-24 px-5 flex gap-4 row-span-3 col-start-1"
+        >
+          <img
+            src="assets/images/Group-photo1.jpeg"
+            alt="award-1"
+            class="w-1/2 object-cover"
+          />
+          <div class="flex flex-col gap-3">
+            <span>03 NOVEMBER 2025</span>
+            <p class="text-blue-950 font-semibold text-lg">
+              <a href="" class="underline">
+                Heseltine institute Annual Lecture celebrates significance of
+                football for Liverpool and its future
+              </a>
+            </p>
+            <p>
+              The deep ties between football and the city of Liverpool were in
+              the spotlight Lorem, ipsum dolor sit amet consectetur adipisicing
+              elit. Ipsam, Victoria gallery & museum
+            </p>
+          </div>
+        </div>
 
+        <div
+          class="bg-white px-5 py-10 rounded flex flex-col gap-4 col-start-2 row-start-1"
+        >
+          <span>09 OCTOBER 2025</span>
+          <p class="text-blue-950 font-bold text-[1rem]">
+            <a href="" class="underline">
+              Liverpool Vive-chancellor meets PM Modi on landmark UK-India trade
+              visit
+            </a>
+          </p>
+        </div>
 
-  <div class="bg-white px-5 py-10 rounded flex flex-col gap-4 col-start-2 row-start-1">
-    <span>09 OCTOBER 2025</span>
-    <p class="text-blue-950 font-bold text-[1rem]">
-      <a href="" class="underline">
-        Liverpool Vive-chancellor meets PM Modi on landmark UK-India trade visit
-      </a>
-    </p>
-  </div>
+        <div
+          class="bg-white px-5 py-10 rounded flex flex-col gap-4 col-start-2 row-start-2"
+        >
+          <span>15 OCTOBER 2025</span>
+          <p class="text-blue-950 font-bold text-[1rem]">
+            <a href="" class="underline">
+              University hosts landmark discussion on potential impact of
+              'Hillsborough law'
+            </a>
+          </p>
+        </div>
 
-  <div class="bg-white px-5 py-10 rounded flex flex-col gap-4 col-start-2 row-start-2">
-    <span>15 OCTOBER 2025</span>
-    <p class="text-blue-950 font-bold text-[1rem]">
-      <a href="" class="underline">
-        University hosts landmark discussion on potential impact of 'Hillsborough law'
-      </a>
-    </p>
-  </div>
+        <div
+          class="bg-white px-5 py-10 rounded flex flex-col gap-4 col-start-2 row-start-3"
+        >
+          <span>17 OCTOBER 2025</span>
+          <p class="text-blue-950 font-bold text-[1rem]">
+            <a href="" class="underline">
+              University celebrates Liverpool's shortlisting for European
+              Capital of innovation 2026
+            </a>
+          </p>
+        </div>
 
-  <div class="bg-white px-5 py-10 rounded flex flex-col gap-4 col-start-2 row-start-3">
-    <span>17 OCTOBER 2025</span>
-    <p class="text-blue-950 font-bold text-[1rem]">
-      <a href="" class="underline">
-        University celebrates Liverpool's shortlisting for European Capital of innovation 2026
-      </a>
-    </p>
-  </div>
-
-  <div class="col-span-2 mt-4">
-    <a href="" class="border p-3 inline-block hover:underline">
-      Read more news
-    </a>
-  </div>
-</div>
+        <div class="col-span-2 mt-4">
+          <a href="" class="border p-3 inline-block hover:underline">
+            Read more news
+          </a>
+        </div>
+      </div>
 
       <h2 class="text-4xl font-bold mb-6 text-black inline-block p-2">
         Latest events
